@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/DanielStefanK/devops-hands-on-project-hivebox/meta"
 )
 
 var (
@@ -12,6 +10,6 @@ var (
 )
 
 func main() {
-	tag, commit := meta.GetVersion()
-	fmt.Printf("%s-%s", tag, commit)
+	fmt.Println("Commit:", GitCommit)
+	fmt.Println("Tag:", GitTag)
 }
